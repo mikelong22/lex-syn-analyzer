@@ -1,5 +1,3 @@
-
-
 #opens text file and returns string as 2d array, each index is a new line in the txt file
 def readFile(filename):
     f = open(filename)
@@ -201,7 +199,7 @@ def assignmentStatement(list,current):
         return expression(list, current)
 
 
-# returns array [pass 1 or fail 0, increment]
+# returns increment
 def conditionalStatement(list, current):
 
     if not (list[current][2] == 'if'):
@@ -224,7 +222,7 @@ def conditionalStatement(list, current):
 
 
 
-#returns array [pass 1 or fail 0, increment]
+#returns increment
 def iterativeStatement(list, current):
     current += 1
     current = expression(list,current)
@@ -240,7 +238,7 @@ def iterativeStatement(list, current):
 
 
 
-# returns array [pass 1 or fail 0, increment]
+# returns increment
 def printStatement(list, current):
     current += 1
     return expression(list,current)
