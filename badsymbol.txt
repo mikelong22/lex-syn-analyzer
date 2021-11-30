@@ -1,7 +1,7 @@
 // This program should print the number 20.
 program Twenty:
   int a;
-  int b;
+  int b;@
   a := 2;
   b := 1;
   if not (a < 0) then
