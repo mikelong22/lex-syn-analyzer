@@ -2,7 +2,7 @@
 program Twenty:
   int a;
   int b;
-  a : = 2;
+  a := 2;
   b := 1;
   if not (a < 0) then
     int b;
